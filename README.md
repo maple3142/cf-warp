@@ -38,6 +38,12 @@ To increase your Warp+ quora by 10 GB, simply run "cf-warp 10".
 
 Obtain `wireguard.conf` from `~/.cf-warp/wireguard.conf` and use it normally.
 
+## FAQ
+
+### How does `cf-warp` get Warp+ quora for free?
+
+It currently get quora by faking referrers since there is no way to pay for premium version outside of 1.1.1.1 app, but it is recommended to pay for it on your phone if you think their service is good.
+
 ## Thanks
 
 https://github.com/yyuueexxiinngg/some-scripts/tree/master/cloudflare
