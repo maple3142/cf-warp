@@ -1,0 +1,15 @@
+{
+	"name": "cf-warp",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"bin": {
+		"cf-warp": "cli.js"
+	},
+	"dependencies": {
+		"execa": "^2.0.4",
+		"fs-extra": "^8.1.0",
+		"get-stdin": "^7.0.0",
+		"xfetch-js": "^0.3.4"
+	}
+}
