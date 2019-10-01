@@ -4,6 +4,8 @@
 
 ## Usage
 
+By using this, you agree the [Privacy Policy](https://www.cloudflare.com/application/privacypolicy/) and [Terms of Service](https://www.cloudflare.com/application/terms/) of Cloudflare 1.1.1.1
+
 ### Step 1
 
 Follow [Installation Guide](https://www.wireguard.com/install/) on WireGuard official webiste to install WireGuard on your system.
