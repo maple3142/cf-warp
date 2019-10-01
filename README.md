@@ -35,3 +35,7 @@ To increase your Warp+ quora by 10 GB, simply run "cf-warp 10".
 ### Step 4
 
 Obtain `wireguard.conf` from `~/.cf-warp/wireguard.conf` and use it normally.
+
+## Thanks
+
+https://github.com/yyuueexxiinngg/some-scripts/tree/master/cloudflare
