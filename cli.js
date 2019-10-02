@@ -23,7 +23,7 @@ const write = (file, content) => fs.writeFile(resovle(file), content, 'utf-8')
 function printInfo(data) {
 	console.log(
 		`Your Warp credentials are located at "${resovle('data.json')}", and WireGuard connection file is "${resovle(
-			'wireguard.conf'
+			'cf-warp.conf'
 		)}".`
 	)
 	console.log(`You currently have ${data.account.quota / 1000000000}GB Warp+ quora.`)
@@ -37,19 +37,25 @@ async function init() {
 	await ref(data) // enable Warp+
 	const combined = Object.assign({}, keys, data, await info(data))
 	await write('data.json', JSON.stringify(combined, null, 2))
-	await write('wireguard.conf', conf(combined))
+	await write('cf-warp.conf', conf(combined))
 	printInfo(combined)
 }
 ;(async () => {
-	const [dE, wE] = await Promise.all([exists('data.json'), exists('wireguard.conf')])
+	const [dE, wE] = await Promise.all([exists('data.json'), exists('cf-warp.conf')])
 	if (!dE) {
 		// regenerate if data.json doesn't exists
 		return init()
 	}
-	const data = JSON.parse(await read('data.json'))
+	let data
+	try {
+		data = JSON.parse(await read('data.json'))
+	} catch (e) {
+		console.log('"data.json" is corrupted, all the credentials will be reset...\n')
+		return init()
+	}
 	if (!wE) {
-		console.log('wireguard.conf missing but data.json exists, regenerate a wireguard.conf')
-		await write('wireguard.conf', conf(data))
+		console.log('"cf-warp.conf" missing but "data.json" exists, regenerating a "cf-warp.conf"...\n')
+		await write('cf-warp.conf', conf(data))
 	}
 	const n = parseInt(args[0])
 	if (!isNaN(n)) {
@@ -62,4 +68,5 @@ async function init() {
 	}
 	const newData = await info(data)
 	printInfo(newData)
+	await write('data.json', JSON.stringify(Object.assign({}, data, newData), null, 2))
 })()

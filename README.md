@@ -28,7 +28,7 @@ Example:
 
 ```bash
 $ cf-warp
-Your Warp credentials are located at "C:\Users\maple3142\.cf-warp\data.json", and WireGuard connection file is "C:\Users\maple3142\.cf-warp\wireguard.conf".
+Your Warp credentials are located at "C:\Users\maple3142\.cf-warp\data.json", and WireGuard connection file is "C:\Users\maple3142\.cf-warp\cf-warp.conf".
 You currently have 1GB Warp+ quora.
 To get your current Warp+ quora, simply run "cf-warp".
 To increase your Warp+ quora by 10 GB, simply run "cf-warp 10".
@@ -36,7 +36,7 @@ To increase your Warp+ quora by 10 GB, simply run "cf-warp 10".
 
 ### Step 4
 
-Obtain `wireguard.conf` from `~/.cf-warp/wireguard.conf` and use it normally.
+Obtain `cf-warp.conf` from `~/.cf-warp/cf-warp.conf` and use it normally.
 
 ## FAQ
 
