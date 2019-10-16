@@ -26,9 +26,9 @@ function printInfo(data) {
 			'cf-warp.conf'
 		)}".`
 	)
-	console.log(`You currently have ${data.account.quota / 1000000000}GB Warp+ quora.`)
-	console.log('To get your current Warp+ quora, simply run "cf-warp".')
-	console.log('To increase your Warp+ quora by 10 GB, simply run "cf-warp 10".')
+	console.log(`You currently have ${data.account.quota / 1000000000}GB Warp+ quota.`)
+	console.log('To get your current Warp+ quota, simply run "cf-warp".')
+	console.log('To increase your Warp+ quota by 10 GB, simply run "cf-warp 10".')
 }
 async function init() {
 	console.log('Initializing Warp credentials...\n')

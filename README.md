@@ -29,9 +29,9 @@ Example:
 ```bash
 $ cf-warp
 Your Warp credentials are located at "C:\Users\maple3142\.cf-warp\data.json", and WireGuard connection file is "C:\Users\maple3142\.cf-warp\cf-warp.conf".
-You currently have 1GB Warp+ quora.
-To get your current Warp+ quora, simply run "cf-warp".
-To increase your Warp+ quora by 10 GB, simply run "cf-warp 10".
+You currently have 1GB Warp+ quota.
+To get your current Warp+ quota, simply run "cf-warp".
+To increase your Warp+ quota by 10 GB, simply run "cf-warp 10".
 ```
 
 ### Step 4
@@ -40,9 +40,9 @@ Obtain `cf-warp.conf` from `~/.cf-warp/cf-warp.conf` and use it normally.
 
 ## FAQ
 
-### How does `cf-warp` get Warp+ quora for free?
+### How does `cf-warp` get Warp+ quota for free?
 
-It currently get quora by faking referrers since there is no way to pay for premium version outside of 1.1.1.1 app, but it is recommended to pay for it on your phone if you think their service is good.
+It currently get quota by faking referrers since there is no way to pay for premium version outside of 1.1.1.1 app, but it is recommended to pay for it on your phone if you think their service is good.
 
 ## Thanks
 
