@@ -1,0 +1,24 @@
+name: Release prebuilt binary
+on:
+    release:
+        types: [created]
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v1
+            - uses: actions/setup-node@v1
+              with:
+                  node-version: 12
+            - name: Install deps
+              run: yarn install
+            - name: Install pkg
+              run: yarn add pkg
+            - name: Build binary
+              run: yarn pkg .
+            - name: Upload the artifacts
+              uses: skx/github-action-publish-binaries@master
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  args: "cf-warp-*"
