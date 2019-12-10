@@ -6,7 +6,9 @@
 
 By using this, you agree the [Privacy Policy](https://www.cloudflare.com/application/privacypolicy/) and [Terms of Service](https://www.cloudflare.com/application/terms/) of Cloudflare 1.1.1.1
 
-### Step 1
+### With Node.js (Recommended)
+
+#### Step 1
 
 Install `cf-warp` globally through yarn or npm.
 
@@ -14,7 +16,7 @@ Install `cf-warp` globally through yarn or npm.
 yarn global add cf-warp # npm i -g cf-warp
 ```
 
-### Step 2
+#### Step 2
 
 Initialize your Warp+ account by running `cf-warp` command.
 
@@ -28,9 +30,23 @@ To get your current Warp+ quota, simply run "cf-warp".
 To increase your Warp+ quota by 10 GB, simply run "cf-warp 10".
 ```
 
-### Step 3
+#### Step 3
 
 Obtain `cf-warp.conf` from `~/.cf-warp/cf-warp.conf` and use it normally.
+
+### Without Node.js
+
+#### Step 1
+
+Go ahead to [releases](https://github.com/maple3142/cf-warp/releases) page and download a binary for your platform.
+
+#### Step 2
+
+Open your cmd/terminal and locate the binary you just downloaded, such as `cf-warp-win.exe` ...
+
+#### Step 3
+
+Use it just like `cf-warp` installed by npm.
 
 ## FAQ
 
