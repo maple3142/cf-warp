@@ -2,6 +2,9 @@
 
 > A simple cli to get [Warp+](https://blog.cloudflare.com/announcing-warp-plus/) as [WireGuard](https://www.wireguard.com/) configuration
 
+> For people who just want a easy way to get a WireGuard of Warp, just download this file: [https://cf-warp.glitch.me/warp.conf](https://cf-warp.glitch.me/warp.conf).
+> Source code of the backend can be found [here](https://glitch.com/edit/#!/cf-warp).
+
 ## Usage
 
 By using this, you agree the [Privacy Policy](https://www.cloudflare.com/application/privacypolicy/) and [Terms of Service](https://www.cloudflare.com/application/terms/) of Cloudflare 1.1.1.1
