@@ -8,19 +8,13 @@ By using this, you agree the [Privacy Policy](https://www.cloudflare.com/applica
 
 ### Step 1
 
-Follow [Installation Guide](https://www.wireguard.com/install/) on WireGuard official webiste to install WireGuard on your system.
-
-You have to make sure `wg` binary exists in your `PATH`.
-
-### Step 2
-
 Install `cf-warp` globally through yarn or npm.
 
 ```bash
 yarn global add cf-warp # npm i -g cf-warp
 ```
 
-### Step 3
+### Step 2
 
 Initialize your Warp+ account by running `cf-warp` command.
 
@@ -34,7 +28,7 @@ To get your current Warp+ quota, simply run "cf-warp".
 To increase your Warp+ quota by 10 GB, simply run "cf-warp 10".
 ```
 
-### Step 4
+### Step 3
 
 Obtain `cf-warp.conf` from `~/.cf-warp/cf-warp.conf` and use it normally.
 
