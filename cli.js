@@ -20,6 +20,11 @@ const resovle = file => path.join(CONFIG_DIR, file)
 const exists = file => fs.exists(resovle(file))
 const read = file => fs.readFile(resovle(file), 'utf-8')
 const write = (file, content) => fs.writeFile(resovle(file), content, 'utf-8')
+function sleep(ms) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms);
+  });
+}
 function printInfo(data) {
 	console.log(
 		`Your Warp credentials are located at "${resovle('data.json')}", and WireGuard connection file is "${resovle(
@@ -61,6 +66,7 @@ async function init() {
 	if (!isNaN(n)) {
 		console.log(`Prepare faking Warp+ referrer for ${n} times.`)
 		for (let i = 1; i <= n; i++) {
+			await sleep(20000)
 			await ref(data)
 			console.log(`#${i} fake referrer finished`)
 		}
