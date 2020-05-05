@@ -1,6 +1,6 @@
 {
 	"name": "cf-warp",
-	"version": "1.2.2",
+	"version": "1.2.3",
 	"main": "index.js",
 	"license": "MIT",
 	"bin": {
@@ -9,7 +9,6 @@
 	"dependencies": {
 		"fs-extra": "^8.1.0",
 		"get-stdin": "^7.0.0",
-		"tweetnacl": "^1.0.1",
-		"xfetch-js": "^0.3.4"
+		"tweetnacl": "^1.0.1"
 	}
 }
