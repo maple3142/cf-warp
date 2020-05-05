@@ -77,9 +77,11 @@ async function init() {
 	if (!isNaN(n)) {
 		console.log(`Prepare faking Warp+ referrer for ${n} times.`)
 		for (let i = 1; i <= n; i++) {
+			if (i > 1) {
+				await sleep(20000)
+			}
 			await ref(data)
 			console.log(`#${i} fake referrer finished`)
-			await sleep(20000)
 		}
 		console.log()
 	}
