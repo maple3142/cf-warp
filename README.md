@@ -42,7 +42,10 @@ Obtain `cf-warp.conf` from `~/.cf-warp/cf-warp.conf` and use it normally.
 #### Step 1
 
 Go ahead to [releases](https://github.com/maple3142/cf-warp/releases) page and download a binary for your platform.
-
+Optionally, you can build your own binary by running
+```npm run build```
+or
+```yarn run build```
 #### Step 2
 
 Open your cmd/terminal and locate the binary you just downloaded, such as `cf-warp-win.exe` ...
