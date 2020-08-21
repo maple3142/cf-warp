@@ -51,6 +51,14 @@ Open your cmd/terminal and locate the binary you just downloaded, such as `cf-wa
 
 Use it just like `cf-warp` installed by npm.
 
+### With Docker
+
+#### Step 1
+
+```bash
+docker run --rm -v ~/.cf-warp:/root/.cf-warp maple3142/cf-warp [args]
+```
+
 ## FAQ
 
 ### How does `cf-warp` get Warp+ quota for free?
