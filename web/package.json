@@ -1,0 +1,10 @@
+{
+	"name": "cf-warpweb",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"dependencies": {
+		"cf-warp": "^1.3.0",
+		"express": "^4.17.1"
+	}
+}
