@@ -65,6 +65,19 @@ docker run --rm -v ~/.cf-warp:/root/.cf-warp maple3142/cf-warp [args]
 
 It currently get quota by faking referrers since there is no way to pay for premium version outside of 1.1.1.1 app, but it is recommended to pay for it on your phone if you think their service is good.
 
+### How do link this to a WARP+ license from the mobile 1.1.1.1 app?
+
+1. Find your license key on your mobile 1.1.1.1 app
+    - It should be under settings/account/key, in the form of "1a2b3d4e-1a2b3d4e-1a2b3d4e"
+2. Copy that key, and run the command:
+
+```bash
+cf-warp --license 1a2b3d4e-1a2b3d4e-1a2b3d4e #Your own license key goes here
+```
+
+3. When done, the current config should be sharing the same data quota as the mobile 1.1.1.1
+    - If you've paid on your phone, this config should enjoy unlimited data and WARP+.
+
 ## Thanks
 
 https://github.com/yyuueexxiinngg/some-scripts/tree/master/cloudflare
